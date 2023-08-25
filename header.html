@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" media="screen">
+
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <!-- Add Bootstrap JS (Popper.js is required for Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <title>newone</title>
+</head>
+
+<body>
+    <header class="head position-fixed" style="background-color: rgba(0,0,0,.83); top: 00px; left: 00px; right: 00px;  z-index: 1030;">
+        <div class="d-flex flex-row">
+            <div class="head ms-4">
+                <img style="width: 50px;  height:50px;" src="static/PMC-logo.png" alt="logo">
+            </div>
+            <div class="mt-4 ms-4">
+                <a href="/" class="text-success">PLAN MY CAREER</a>
+            </div>
+            <div class="mt-3 ms-5">
+                <a href="/" class="text-white">Home</a>
+            </div>
+            <div class="mt-3 ms-5 dropdown show">
+                <a class=" dropdown-toggle text-white" href="#" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Jobs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <div class="mt-3 ms-5 dropdown show">
+                <a class=" dropdown-toggle text-white" href="#" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Career Tools
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <div class="mt-3 ms-5 dropdown show">
+                <a class=" dropdown-toggle text-white" href="#" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Education
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <div class="mt-3 ms-5 dropdown show">
+                <a class=" dropdown-toggle text-white" href="#" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Resume
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <div class="mt-3 ms-5 dropdown show">
+                <a class=" dropdown-toggle text-white" href="#" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Career
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <div class="mt-3 ms-5">
+                <a href="/" class="text-success text-white">Success Stories</a>
+            </div>
+            <div class="mt-3 ms-5">
+                <a href="/" class="text-success text-white">Blog</a>
+            </div>
+            <div class="mt-3 ms-5 dropdown show">
+                <a class=" dropdown-toggle text-white" href="#" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    More
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <div class="ms-5 p-2">
+                    <li class=" button-group">
+                        <a href="/login/" class="button btn btn-common bg-success text-white" style="border-radius: 30px;">Login</a>
+                    </li>
+                </div>
+                <div class="ms-5">
+                    <li class=" button-group">
+                        <a href="/signup/" class="button btn bg-success text-white" style="border-radius: 30px;">SignUp</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="sv d-flex flex-row">
+        <div class="p-2">
+            <h1 class="head-title" id="demo">Shape a Career That is a Dreamcatcher</h1>
+            <div class="mt-5">
+                <p>With your zeal and our knowledge, we will enable you to shape a career that will make your dreams
+                    come true.
+                </p>
+            </div>
+            <div class="mt-5 search">
+                <i class="fa fa-search"></i>
+                <div class="d-flex flex-row">
+                    <div class="p-0">
+                        <input type="text" class="form-control" style="border-radius: 30px; width: 500px; height: 50px;" placeholder="Select your Dream Career">
+                    </div>
+                    <div class="ms-4 p-0">
+                        <button class="btn btn-success" style="border-radius: 30px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ms-5 p-2">
+            <img style="width: 500px;  height:400px;" src="static/intro.png" alt="image">
+        </div>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-center">
+        <h2 class="section-title">Browse Categories</h2>
+    </div>
+    <div class="d-flex justify-content-center">
+        <p>Choose Options from our Services</p>
+    </div>
+
+
+    <div class="sv d-flex">
+        <div class="mv card p-2 text-center">
+            <a href="/university/"><img style="width: 80px;  height: 80px;" src="static/red.png">
+                <h3 class="text-dark"> Universities</h3>
+            </a>
+        </div>
+        <div class="mv card p-2 text-center">
+            <a href="/Colleges/"><img style="width: 80px;  height:80px;" src="static/college.png">
+                <h3 class="text-dark">Colleges</h3>
+            </a>
+        </div>
+        <div class="mv card p-2 text-center">
+            <a href="/Boards/"><img style="width: 80px;  height:80px;" src="static/boards.png">
+                <h3 class="text-dark">Boards</h3>
+            </a>
+        </div>
+        <div class="mv card p-2 text-center">
+            <a href="/Schools/"><img style="width: 80px;  height: 80px;" src="static/school.png">
+                <h3 class="text-dark">Schools</h3>
+            </a>
+        </div>
+    </div>
+    <div class="d-flex" style=" margin: 00px 80px 00px 80px;">
+        <div class="mv card p-2 text-center">
+            <a href="/Internships/"><img style="width: 80px;  height: 80px;" src="static/intern.png">
+                <h3 class="text-dark"> Internships</h3>
+            </a>
+        </div>
+        <div class="mv card p-2 text-center">
+            <a href="/Scholarships/"><img style="width: 80px;  height:80px;" src="static/scholarship.png">
+                <h3 class="text-dark">Scholarships</h3>
+            </a>
+        </div>
+        <div class="mv card p-2 text-center" >
+            <a href="/Preparations/"><img style="width: 80px;  height:80px;" src="static/preparation.png">
+                <h3 class="text-dark">Preparations</h3>
+            </a>
+        </div>
+        <div class="mv card p-2 text-center">
+            <a href="/Jobs/"><img style="width: 80px;  height: 80px;" src="static/job.png">
+                <h3 class="text-dark">Jobs</h3>
+            </a>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <h5><a href="#" class="text-dark ">More></a></h5>
+    </div>
+
+
+    <div class="sv d-flex flex-row">
+        <div class="mt-5">
+            <h1>That Endless World Of Career</h1>
+            <h1 class="text-center">Opportunities</h1>
+            <p class="mt-5">With a vast roster of career possibilities, choose the one which suits your talent pool</p>
+            <div class="text-center">
+            <a href="/#/" class="mt-5 button btn bg-success text-white " style="border-radius: 30px;">CAREER OPTIONS</a>
+            </div>
+        </div>
+        <div class="ms-5 p-2">
+            <img src="static/search.png" alt="image">
+        </div>
+    </div>
+    <hr>
+
+        <h2 class="text-center text-dark" style="margin-top: 60px;">Career Road Map <svg xmlns="http://www.w3.org/2000/svg" width="35" height="65" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+        </svg></h2>
+        <p class="text-center">With us preplan a failproof path to success in your career which will make your true
+            potential come out and make you a force to be reckoned with.</p>
+    <div class="sv d-flex flex-row">
+        <div class="p-2">
+            <h1 class="mt-5">The Path to Indomitable Success </h1>
+            <h1 class="text-center">in Your Career</h1>
+            <p class="mt-5">Venturing into unknown waters without proper knowledge will make you a meal for</p>
+            <p class="text-center"> in the water. Search through our extensive base of knowledge and find</p>
+            <p class="text-center">information which will help you to be successful.</p>
+            <div class="text-center">
+                <a href="/#/" class="mt-5 button btn bg-success text-white" style="border-radius: 30px;">Search Career</a>
+            </div>
+        </div>
+        <div class="ms-5 p-2">
+            <img style="width: 500px;  height:450px;" src="static/rm.png" alt="image">
+        </div>
+    </div>
+    <hr>
+
+
+
+
+    <div class="text-center" style="margin-top: 80px;">
+        <h2 class="text-dark">Money Is The Motivation, Money Is The Conversation</h2>
+        <p>Is your valuable investment of time and energy into a career going to reward you with enough returns for
+            your efforts or are you doing futile work?</p>
+    </div>
+
+
+    <div class="sv d-flex flex-row">
+        <div class="p-0">
+            <img src="static/job (1).png" alt="image">
+        </div>
+        <div class="p-2" style="margin-top: 60px; margin-left: 150px;">
+            <h3 class="text-center display-4">Job Satisfaction</h3>
+            <p class="mt-5 text-center">Are you settled cozily with your job, or are you hungry for more? If you are
+                looking<br> forreal growth, we can help you.</p>
+            <div class="text-center">
+                <a href="/#/" class="mt-5 button btn bg-success text-white" style="border-radius: 30px;">Search Job</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <h2 class="text-center text-dark" style="margin-top: 80px;">Search Schools and Colleges</h2>
+    <p class="text-center">PMC is here to Guide you the best Schools or Colleges at your desired place</p>
+
+
+    <div class="sv d-flex flex-row" >
+        <div class="p-2" style="margin-top: 90px;">
+            <h1 class="text-center">Search Best Schools And Colleges at Your Place</h1>
+            <p class="text-center mt-5">We provide the List of best among Schools and Colleges<br>
+                At your desired location</p>
+                <div class="text-center">
+                <a href="#" class="mt-5 btn btn-border bg-success text-white" style="border-radius: 30px;">Search Schools</a>
+                </div>
+        </div>
+        <div class="p-2">
+            <img src="static/school (1).png" alt="image">
+        </div>
+    </div>
+    </div>
+    <hr>
+
+    <h2 class="text-center text-dark" style="margin-top: 70px;">Let Your Work Define You</h2>
+    <p class="text-center">With our tools, sharpen your skills to a scalpel-like precision and be an artist at your
+        work. A man’s worth is the man’s skills.</p>
+
+    <div class="d-flex flex-row justify-content-around" style="margin-top: 90px;">
+        <div class="p-2 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-journal   "
+                viewBox="0 0 16 16">
+                <path
+                    d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
+                <path
+                    d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
+            </svg>
+            <h4 class="mt-5">Resume Writing</h4>
+            <p>Create Resume with a proper format.</p>
+        </div>
+        <div class=" p-2 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                class="bi bi-question-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+            </svg>
+            <h4 class="mt-4">Interview Questions</h4>
+            <p>Practice the most asked Interview Questions by the Top<br> companies.</p>
+        </div>
+        <div class=" p-2 text-center" style="width: 470; height: 470;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-mic"
+                viewBox="0 0 16 16">
+                <path
+                    d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
+            </svg>
+            <h4 class="mt-5">Voice Discussion</h4>
+            <p>Discuss with the Experts or Ask your <br>Queries.</p>
+        </div>
+    </div>
+    <hr>
+
+    <h2 class="text-center text-dark" style="margin-top: 100px;">Quotes</h2>
+
+    <div id="carouselExampleControls" class="sv card carousel slide"
+        data-bs-ride="carousel">
+        <div class=" carousel-inner">
+            <div class="mt-5 carousel-item active ">
+                <img src="static/img1.png" class="rounded mx-auto d-block w-20px mt-5 " alt="...">
+                <p class="mt-5 text-center">Morbi quam enim, cursus non erat pretium veh icula finibus ex
+                    stibulum venenatis viverra dui <br>Morbi quam enim, cursus non erat pretium veh
+                    icula finibus ex stibulum venenatis viverra dui<br> Morbi quam enim, cursus non erat
+                    pretium veh icula finibus ex stibulum venenatis viverra dui.
+                </p>
+                <h2 class="mt-5 text-center"><a href="#">Jessica</a></h2>
+                <h4 class="text-center">Senior Accountant</h4>
+            </div>
+            <div class="mt-5 carousel-item">
+                <img src="static/img2.png" class="rounded mx-auto d-block w-20px mt-5" alt="...">
+                <p class="text-center mt-5">Morbi quam enim, cursus non erat pretium veh icula finibus ex
+                    stibulum venenatis viverra dui <br>Morbi quam enim, cursus non erat pretium veh
+                    icula finibus ex stibulum venenatis viverra dui<br> Morbi quam enim, cursus non erat
+                    pretium veh icula finibus ex stibulum venenatis viverra dui.
+                </p>
+                <h2 class="mt-5 text-center"><a href="#">John Doe</a></h2>
+                <h4 class="text-center">Project Menager</h4>
+            </div>
+            <div class="mt-5 carousel-item">
+                <img src="static/img3.png" class="rounded mx-auto d-block w-20px mt-5" alt="...">
+                <p class="mt-5 text-center">Morbi quam enim, cursus non erat pretium veh icula finibus ex
+                    stibulum venenatis viverra dui <br>Morbi quam enim, cursus non erat pretium veh
+                    icula finibus ex stibulum venenatis viverra dui<br> Morbi quam enim, cursus non erat
+                    pretium veh icula finibus ex stibulum venenatis viverra dui.
+                </p>
+                <h2 class="mt-5 text-center"><a href="#">Helen</a></h2>
+                <h4 class="text-center">Engineer</h4>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="btn-danger carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="btn-danger carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="sv d-flex flex-row">
+        <div class="p-2">
+            <h1 style="margin-top: 90px;">Download Our PMC App</h1>
+            <p class="mt-5">Enjoy the PMC app in your hands by installing it your mobile. Never miss any update
+                regarding career</p>
+            <div  style="margin-left: 70px; margin-top: 40px;">
+                <a href="#" class="btn btn-border bg-success text-white" style="border-radius: 30px;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                  </svg> Download <br> <span>From
+                        Apple store</span></a>
+                <a href="#" class="btn btn-common bg-success text-white" style="border-radius: 30px;"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+                    <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"/>
+                  </svg>Download
+                    <br> <span>From Play Store</span></a>
+            </div>
+        </div>
+        <div class="p-2">
+            <img src="static/app.png" alt="image">
+        </div>
+    </div>
+    </div>
+
+
+    <section style="margin-top: 90px; background-color: #24324a; color: #8a99b3;">
+        <div class="container" style="padding: 60px 0;">
+            <div class="d-flex flex-row">
+                <div class="p-2">
+                    <img style="width: 70px;  height:70px;" src="static/PMC-logo.png" alt="logo">
+                    <p>
+                        Plan My Career is a overall tool for <br>your problems regaring your Career.<br> We provide
+                        the best
+                        career options<br> that suits your standard
+                    </p>
+                </div>
+                <div class="ms-5">
+                    <h4 class="text-white">Quick Links</h4>
+                    <p>
+                        <a href="#" class="text-reset">About Us</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-reset">Support</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-reset">License</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-reset">Contact</a>
+                    </p>
+                </div>
+                <div style="margin-top: 35px; margin-left: 160px;">
+                    <p>
+                        <a href="#!" class="text-reset">Terms & Conditions</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Privacy</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Refferal Terms</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Product License</a>
+                    </p>
+                </div>
+                <div style="margin-left: 180px;">
+                    <h4 class="text-white">Subscribe Now</h4>
+                    <p>subscibe plan my career for all new <br>updates</p>
+                    <div class="d-flex flex-row">
+                        <div class="p-0">
+                            <input type="text" class="form-control" placeholder="Enter Email..."
+                            style="background: transparent;">
+                        </div>
+                        <div class="p-0">
+                            <button class="btn btn-common bg-success text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <a href="#">
+                            <svg href="#" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-facebook  btn-primary" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg></a>
+                        <a href="#" class="ms-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-twitter btn-info" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg></a>
+                        <a href="#" class="ms-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-linkedin btn-primary" style="border-radius: 30px;"  viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg></a>
+                        <a href="#" class="ms-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-google btn-danger" viewBox="0 0 16 16">
+                                <path
+                                    d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div class="text-center p-4 bg-success" >
+        <p class="text-reset fw-bold">Copyright reserved to Plan My Careers</p>
+    </div>
+    <div class="d-flex justify-content-end">
+        <a href="#" class="position-fixed bg-success" style="bottom: 12px; border-radius: 30px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="bi bi-arrow-up-circle"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+            </svg></a>
+    </div>
+
+
+
+</body>
+
+</html>
